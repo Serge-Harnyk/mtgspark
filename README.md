@@ -1,0 +1,1 @@
+cat AllCards.json | jq -r 'to_entries[] | [.value]' | jq -sc '.|.[]' > AllCardsSplitted.json
